@@ -1,0 +1,9 @@
+default menu.c32
+promt 0
+timeout 300
+ONTIME local
+menu title  #### PXE BOOT Menu ####
+              label 1
+              menu label ^1) Install Centos 8.3 on Bios-based system
+              kernel /vmlinuz
+              append initrd=/initrd.img inst.repo=http://192.168.10.23/centos8-install devfs=nomount
